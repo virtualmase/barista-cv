@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph's Coffee - Luxury Hospitality CV</title>
+    <title>Ralph's Coffee - Sophisticated Hospitality CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -14,21 +14,35 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; line-height: 1.7; color: var(--text-main); background-color: #f4f4f4; padding: 60px 20px; }
-        .container { max-width: 850px; margin: 0 auto; background: white; padding: 60px 80px; border: 1px solid #ddd; }
+        .container { max-width: 850px; margin: 0 auto; background: white; padding: 60px 80px; border: 1px solid #ddd; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
         header { margin-bottom: 50px; text-align: center; }
         h1 { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: var(--ralph-green); text-transform: uppercase; letter-spacing: -0.01em; }
         .tagline { font-family: 'Libre Baskerville', serif; font-size: 0.8rem; color: var(--ralph-gold); text-transform: uppercase; letter-spacing: 0.3em; margin-top: 15px; font-style: italic; }
         .contact { font-family: 'Libre Baskerville', serif; font-size: 0.7rem; color: var(--text-muted); margin-top: 20px; display: flex; justify-content: center; gap: 25px; text-transform: uppercase; letter-spacing: 0.1em; border-top: 1px solid #eee; padding-top: 15px; }
+        
         h2 { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: white; background-color: var(--ralph-green); margin: 40px 0 20px; padding: 8px 15px; font-weight: 700; display: inline-block; }
-        .philosophy { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: var(--ralph-green); font-style: italic; text-align: center; margin-bottom: 30px; }
+        .philosophy { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: var(--ralph-green); font-style: italic; text-align: center; margin-bottom: 30px; border-left: 3px solid var(--ralph-gold); padding-left: 20px; display: inline-block; width: 100%; }
+        
         .exp-item { margin-bottom: 35px; }
         .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
         .company { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--ralph-green); font-size: 1.25rem; }
         .date { font-family: 'Libre Baskerville', serif; color: var(--ralph-gold); font-size: 0.7rem; font-weight: 700; }
-        .role { color: var(--text-main); font-weight: 600; font-size: 0.85rem; margin-bottom: 10px; display: block; text-transform: uppercase; letter-spacing: 0.05em; }
+        .role { color: var(--text-main); font-weight: 600; font-size: 0.85rem; margin-bottom: 10px; display: block; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px inset #f9f9f9; }
+        
         ul { list-style: none; color: var(--text-muted); font-size: 0.9rem; }
         li { margin-bottom: 8px; position: relative; padding-left: 15px; }
         li::before { content: "•"; color: var(--ralph-gold); position: absolute; left: 0; }
+        
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 10px; }
+        .skill-box { padding: 15px; background: #fafafa; border: 1px solid #eee; }
+        .skill-title { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--ralph-gold); margin-bottom: 8px; display: block; }
+        .skill-content { font-family: 'Libre Baskerville', serif; font-size: 0.75rem; color: var(--ralph-green); }
+
+        @media print {
+            body { padding: 0; background-color: white; }
+            .container { box-shadow: none; border: none; width: 100%; padding: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -36,7 +50,7 @@
 <div class="container">
     <header>
         <h1>[YOUR NAME]</h1>
-        <p class="tagline">Culinary Excellence • Heritage & Hospitality</p>
+        <p class="tagline">Heritage Hospitality • Culinary Management</p>
         <div class="contact">
             <span>[Phone]</span>
             <span>[Email]</span>
@@ -44,10 +58,12 @@
         </div>
     </header>
 
-    <p class="philosophy">"Utilizing a record across premier dining groups to facilitate a sophisticated world-class respite."</p>
+    <div class="philosophy">
+        "Utilizing classical discipline to facilitate a sophisticated world-class respite where community and artistry intersect."
+    </div>
 
     <section>
-        <h2>Education & Pedigree</h2>
+        <h2>Academic Pedigree</h2>
         <div class="exp-item">
             <div class="exp-header">
                 <span class="company" style="font-size: 1.1rem;">Auguste Escoffier School of Culinary Arts</span>
@@ -55,13 +71,13 @@
             </div>
             <span class="role">A.O.S. in Hospitality & Restaurant Operations Management</span>
             <p style="font-family: 'Libre Baskerville', serif; font-size: 0.85rem; color: var(--text-muted);">
-                Leveraging classical training to direct complex facilities operations, utilizing detailed cost-control and menu-design strategies to ensure brand integrity.
+                Leveraging classical training to direct complex facilities operations, utilizing detailed cost-control and menu-design strategies to ensure brand integrity within the luxury industry.
             </p>
         </div>
     </section>
 
     <section>
-        <h2>Professional Record Across the Industry</h2>
+        <h2>Professional Journey</h2>
         
         <div class="exp-item">
             <div class="exp-header">
@@ -72,7 +88,7 @@
             <ul>
                 <li>Directed back-of-house operations for a premier restaurant group, utilizing an ability to maintain the highest standards of culinary artistry and guest satisfaction.</li>
                 <li>Spearheaded staff mentorship and training across the industry’s most sophisticated kitchen environments, facilitating a culture of excellence and precision.</li>
-                <li>Utilizing extensive knowledge of food-and-beverage logistics to manage purchasing and inventory for high-end concepts like The Brinkerhoff and Sierra.</li>
+                <li>Utilizing extensive knowledge of food-and-beverage logistics to manage purchasing and inventory for high-end hospitality concepts.</li>
             </ul>
         </div>
 
@@ -83,8 +99,8 @@
             </div>
             <span class="role">Lead Hospitality Ambassador</span>
             <ul>
-                <li>Facilitated a "Signature" service model for a private club clientele, utilizing an ability to provide warm, personalized care in a world-class sporting environment.</li>
-                <li>Directed logistics for diverse luxury dining venues, ensuring a sophisticated atmosphere synonymous with the club's heritage.</li>
+                <li>Facilitated a "Signature" service model for a private club clientele, utilizing an ability to provide warm, personalized care in a world-class environment.</li>
+                <li>Directed logistics for diverse luxury dining venues, ensuring a sophisticated atmosphere synonymous with the brand's heritage.</li>
                 <li>Spearheaded seasonal menu refinements by leveraging detailed guest insights and a deep understanding of the premier lifestyle industry.</li>
             </ul>
         </div>
@@ -94,21 +110,31 @@
                 <span class="company">Loyal Coffee</span>
                 <span class="date">2019 — 2021</span>
             </div>
-            <span class="role">Ambassador & Senior Barista</span>
+            <span class="role">Chef De Partie</span>
             <ul>
-                <li>Innovated guest engagement by utilizing the "9 touch points of service," facilitating an environment where community and craft coffee intersect.</li>
-                <li>Directed the preparation of specialty beverages with a hyper-focus on hospitality, leveraging detailed product knowledge to educate every guest.</li>
-                <li>Spearheaded cafe organization initiatives, utilizing a record across maintaining pristine, high-standard retail environments.</li>
+                <li>Facilitated an elevated food program with a hyper-focus on hospitality, utilizing classical techniques to build dishes to order in an excellent and timely manner.</li>
+                <li>Innovated kitchen efficiency by spearheading prep workflows for bulk items, utilizing provided recipes to ensure detailed consistency.</li>
+                <li>Utilizing a record across maintaining high-standard retail environments, directed the daily upkeep of a well-functioning kitchen to exceed guest expectations.</li>
+                <li>Leveraging the "9 touch points of service" to engage and elevate the community, utilizing a detailed eye for station readiness.</li>
             </ul>
         </div>
     </section>
 
     <section>
         <h2>Core Ability</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; font-size: 0.8rem; color: var(--ralph-green); font-family: 'Libre Baskerville', serif;">
-            <div><strong>MANAGEMENT:</strong> Cost Control, Inventory Purchasing, Facilities Operations, Industry Relations.</div>
-            <div><strong>CRAFT:</strong> Classical Culinary Method, Plating Excellence, Beverage Service, Menu Design.</div>
-            <div><strong>SERVICE:</strong> Luxury Clienteling, Private Club Protocol, Team Leadership, Detailed Guest Relations.</div>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <span class="skill-title">Operations</span>
+                <p class="skill-content">Cost Control, Inventory Purchasing, Facilities Management, Industry Relations.</p>
+            </div>
+            <div class="skill-box">
+                <span class="skill-title">Craft</span>
+                <p class="skill-content">Chef De Partie Expertise, Plating Excellence, Beverage Service, Menu Design.</p>
+            </div>
+            <div class="skill-box">
+                <span class="skill-title">Service</span>
+                <p class="skill-content">Luxury Clienteling, Private Club Protocol, Team Leadership, Detailed Guest Relations.</p>
+            </div>
         </div>
     </section>
 </div>
