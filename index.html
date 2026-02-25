@@ -3,114 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph's Coffee - Colorado Heritage CV</title>
+    <title>Ralph's Coffee - Professional Heritage CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --ralph-green: #004438; 
-            --ralph-cream: #fdfcf8;
             --ralph-gold: #c5a059;
             --text-main: #1a1a1a;
             --text-muted: #4a4a4a;
         }
-
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body { 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.7; 
-            color: var(--text-main); 
-            background-color: #f4f4f4; 
-            padding: 80px 20px;
-        }
-
-        .container { 
-            max-width: 850px; 
-            margin: 0 auto; 
-            background: white;
-            padding: 60px 80px; 
-            border: 1px solid #ddd;
-        }
-
-        header { 
-            margin-bottom: 60px; 
-            text-align: center;
-        }
-
-        h1 { 
-            font-family: 'Playfair Display', serif;
-            font-size: 3.2rem; 
-            font-weight: 900; 
-            color: var(--ralph-green); 
-            letter-spacing: -0.01em; 
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        .tagline { 
-            font-family: 'Libre Baskerville', serif;
-            font-size: 0.85rem; 
-            color: var(--ralph-gold); 
-            font-weight: 400; 
-            text-transform: uppercase; 
-            letter-spacing: 0.3em; 
-            margin-top: 20px;
-            font-style: italic;
-        }
-
-        .contact { 
-            font-family: 'Libre Baskerville', serif;
-            font-size: 0.7rem; 
-            color: var(--text-muted); 
-            margin-top: 25px; 
-            display: flex; 
-            justify-content: center;
-            gap: 30px; 
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        h2 { 
-            font-family: 'Inter', sans-serif;
-            font-size: 0.75rem; 
-            text-transform: uppercase; 
-            letter-spacing: 0.25em; 
-            color: white; 
-            background-color: var(--ralph-green);
-            margin: 45px 0 25px; 
-            padding: 10px 20px;
-            font-weight: 700; 
-            display: inline-block;
-        }
-        
-        .philosophy { 
-            font-family: 'Libre Baskerville', serif;
-            font-size: 1.2rem; 
-            color: var(--ralph-green); 
-            font-weight: 400; 
-            line-height: 1.6; 
-            margin-bottom: 20px; 
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .exp-item { margin-bottom: 40px; }
-        .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
-        .company { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--ralph-green); font-size: 1.3rem; }
-        .date { font-family: 'Libre Baskerville', serif; color: var(--ralph-gold); font-size: 0.75rem; font-weight: 700; }
-        .role { color: var(--text-main); font-weight: 600; font-size: 0.9rem; margin-bottom: 12px; display: block; text-transform: uppercase; letter-spacing: 0.05em; }
-
-        ul { list-style-type: none; color: var(--text-muted); font-size: 0.95rem; }
-        li { margin-bottom: 10px; line-height: 1.5; }
-        li strong { color: var(--ralph-green); font-family: 'Libre Baskerville', serif; font-style: italic; font-weight: 700; }
-
-        .edu-item { margin-bottom: 20px; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: var(--text-main); background-color: #f4f4f4; padding: 60px 20px; }
+        .container { max-width: 850px; margin: 0 auto; background: white; padding: 60px 80px; border: 1px solid #ddd; }
+        header { margin-bottom: 50px; text-align: center; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: var(--ralph-green); text-transform: uppercase; letter-spacing: -0.01em; }
+        .tagline { font-family: 'Libre Baskerville', serif; font-size: 0.8rem; color: var(--ralph-gold); text-transform: uppercase; letter-spacing: 0.3em; margin-top: 15px; font-style: italic; }
+        .contact { font-family: 'Libre Baskerville', serif; font-size: 0.7rem; color: var(--text-muted); margin-top: 20px; display: flex; justify-content: center; gap: 25px; text-transform: uppercase; letter-spacing: 0.1em; border-top: 1px solid #eee; padding-top: 15px; }
+        h2 { font-family: 'Inter', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: white; background-color: var(--ralph-green); margin: 40px 0 20px; padding: 8px 15px; font-weight: 700; display: inline-block; }
+        .philosophy { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: var(--ralph-green); font-style: italic; text-align: center; margin-bottom: 30px; }
+        .exp-item { margin-bottom: 35px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .company { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--ralph-green); font-size: 1.2rem; }
+        .date { font-family: 'Libre Baskerville', serif; color: var(--ralph-gold); font-size: 0.7rem; font-weight: 700; }
+        .role { color: var(--text-main); font-weight: 600; font-size: 0.85rem; margin-bottom: 10px; display: block; text-transform: uppercase; letter-spacing: 0.05em; }
+        ul { list-style: none; color: var(--text-muted); font-size: 0.9rem; }
+        li { margin-bottom: 8px; position: relative; padding-left: 15px; }
+        li::before { content: "•"; color: var(--ralph-gold); position: absolute; left: 0; }
         .edu-school { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--ralph-green); font-size: 1.1rem; }
-
-        @media print {
-            body { padding: 0; background-color: white; }
-            .container { box-shadow: none; border: none; max-width: 100%; padding: 40px; }
-        }
     </style>
 </head>
 <body>
@@ -118,63 +37,56 @@
 <div class="container">
     <header>
         <h1>[YOUR NAME]</h1>
-        <p class="tagline">Culinary Artistry • High-Altitude Hospitality</p>
+        <p class="tagline">Culinary Excellence • Heritage Hospitality</p>
         <div class="contact">
-            <span>[Phone Number]</span>
-            <span>[Email Address]</span>
-            <span>Colorado / New York</span>
+            <span>[Phone]</span>
+            <span>[Email]</span>
+            <span>Colorado Springs • New York</span>
         </div>
     </header>
 
-    <section style="border-bottom: 1px solid #eee; padding-bottom: 40px;">
-        <p class="philosophy">
-            "Classical training meeting the refined grace of the sporting life."
-        </p>
-        <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted); font-style: italic;">
-            Leveraging a record across premier Colorado establishments and an Escoffier pedigree to facilitate an extensive guest experience.
-        </p>
-    </section>
+    <p class="philosophy">"Utilizing classical discipline to facilitate a welcoming, world-class respite."</p>
 
     <section>
-        <h2>Education & Pedigree</h2>
-        <div class="edu-item">
+        <h2>Education</h2>
+        <div class="exp-item">
             <div class="exp-header">
                 <span class="edu-school">Auguste Escoffier School of Culinary Arts</span>
-                <span class="date">Boulder, CO</span>
+                <span class="date">BOULDER, CO</span>
             </div>
             <span class="role">Associate of Occupational Studies in Culinary Arts</span>
-            <p style="font-family: 'Libre Baskerville', serif; font-size: 0.9rem; color: var(--text-muted);">
-                Classical training in the Escoffier method, utilizing rigorous technical standards and a detailed understanding of ingredient provenance.
+            <p style="font-family: 'Libre Baskerville', serif; font-size: 0.85rem; color: var(--text-muted);">
+                Classical immersion in the Escoffier method, leveraging rigorous technical standards and an extensive understanding of culinary provenance.
             </p>
         </div>
     </section>
 
     <section>
-        <h2>Professional Journey</h2>
+        <h2>Professional Record Across the Industry</h2>
         
         <div class="exp-item">
             <div class="exp-header">
                 <span class="company">Brinkerhoff Hospitality</span>
-                <span class="date">2023 — PRESENT</span>
+                <span class="date">PRESENT</span>
             </div>
-            <span class="role">Lead Service Coordinator</span>
+            <span class="role">Culinary Manager</span>
             <ul>
-                <li><strong>Brand Stewardship:</strong> Innovated service protocols that elevated guest satisfaction, ensuring every touchpoint mirrored the industry’s premium standards.</li>
-                <li><strong>Operations:</strong> Facilitated daily logistics for high-volume service, maintaining a record across seamless event execution and high-profile relations.</li>
-                <li><strong>Visual Integrity:</strong> Directed the aesthetic presentation of the dining environment, utilizing a detailed eye for merchandising and floral arrangement.</li>
+                <li>Directed daily kitchen operations and food preparation, leveraging detailed plating techniques to ensure every dish met the brand’s visual identity.</li>
+                <li>Spearheaded staff training on sanitary habits and recipe execution, facilitating a culture of excellence and operational consistency.</li>
+                <li>Utilizing high-volume expertise to manage inventory and streamline operations while maintaining an extensive standard for guest satisfaction.</li>
             </ul>
         </div>
 
         <div class="exp-item">
             <div class="exp-header">
-                <span class="company">Flying Horse Golf Club</span>
+                <span class="company">Flying Horse Resort & Club</span>
                 <span class="date">2021 — 2023</span>
             </div>
-            <span class="role">Premium Hospitality Ambassador</span>
+            <span class="role">Lead Hospitality Ambassador</span>
             <ul>
-                <li><strong>Clienteling:</strong> Facilitated a high-touch service model for a private membership, leveraging detailed personal preferences to build lasting community loyalty.</li>
-                <li><strong>Atmospheric Management:</strong> Spearheaded the "theater of service" within a premier sporting environment, ensuring a sophisticated world-class respite for members.</li>
-                <li><strong>Leadership:</strong> Spearheaded training for service staff, utilizing heritage storytelling to mentor the team on the nuances of luxury hospitality.</li>
+                <li>Facilitated a "Signature" guest experience for club members and resort guests, utilizing an ability to provide warm, personalized service in a premier sporting environment.</li>
+                <li>Directed front-of-house logistics for the award-winning Steakhouse and Athletic Grill, ensuring a sophisticated atmosphere synonymous with a world-class respite.</li>
+                <li>Spearheaded the integration of member feedback to refine seasonal menus, leveraging a detailed understanding of the "Flying Horse" community lifestyle.</li>
             </ul>
         </div>
 
@@ -183,15 +95,23 @@
                 <span class="company">Loyal Coffee</span>
                 <span class="date">2019 — 2021</span>
             </div>
-            <span class="role">Senior Craft Barista</span>
+            <span class="role">Ambassador & Senior Barista</span>
             <ul>
-                <li><strong>Craft Excellence:</strong> Innovated drink presentation standards that utilized classical techniques, delivering an extensive product experience to a discerning clientele.</li>
-                <li><strong>Community Engagement:</strong> Innovated local partnership events that expanded the brand’s footprint within the boutique coffee industry.</li>
-                <li><strong>Quality Control:</strong> Ability to manage complex guest requirements with grace, ensuring a sophisticated atmosphere even during peak hours.</li>
+                <li>Innovated guest interactions by utilizing the "9 touch points of service," facilitating an environment where community and craft coffee intersect seamlessly.</li>
+                <li>Directed the preparation of specialty beverages with a hyper-focus on hospitality, leveraging detailed product knowledge to educate and engage guests.</li>
+                <li>Spearheaded "Support Squad" initiatives to ensure impeccable cafe organization and cleanliness, utilizing a record across maintaining high-standard retail environments.</li>
             </ul>
         </div>
     </section>
 
+    <section>
+        <h2>Core Ability</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; font-size: 0.8rem; color: var(--ralph-green); font-family: 'Libre Baskerville', serif;">
+            <div><strong>CRAFT:</strong> Espresso Mastery, Classical Plating, Latte Art, Menu Development.</div>
+            <div><strong>SERVICE:</strong> Luxury Clienteling, Private Club Etiquette, Conflict Resolution.</div>
+            <div><strong>LEADERSHIP:</strong> Team Mentorship, Inventory Control, Industry Relations.</div>
+        </div>
+    </section>
 </div>
 
 </body>
